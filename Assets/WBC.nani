@@ -1,0 +1,126 @@
+
+@back wbc
+@bgm playground loop:false fade:15 time:15
+@wait 1
+Welcome to Wood Bridge Elementary School 
+The morning sun casts a warm glow through the windows, illuminating the bustling hallway as the school day comes to life. 
+@hideAll time:1
+@back aryanint
+Meet Aryan who studies in Grade 5 and have recently joined Wood Bridge.  
+Today is his first day in the school. 
+@sfx schoolbell loop:false time:2
+BELL RINGS! 
+The bell echoes through the halls as students rush to the playground.
+@hideAll time:0.1 remove:bgm
+@back lunch
+@wait 1
+@back goingpg
+ Amidst the crowd, Aryan navigates his way, casting a longing glance at the kids playing.
+@hideAll remove:bgm
+@back playground rotation:0.3
+@wait 2
+@bgm fall loop:false
+@sfx balldrop volume:1 loop:false wait:false
+@char aryan.fell wait:false
+@hideAll time:1
+Aryan gets knocked down by a basketball
+@back playground
+@char rudy.smirk_int pos:left position:0,0 scale:1
+RUDY: (laughing)Gotcha good, Aryan! 
+@hideChars
+@back fell time:2
+ARYAN: What do you want?!  
+@wait 1
+@back rud
+~~A SUDDEN CHILL IN THE AIR ~~
+@sfx danger loop:false
+RUDY: (teasing)You were very loud in class today with all the answers. 
+RUDY: You think you are better than us?! 
+@back fell
+ARYAN: What do you want from me? I didn't do anything to you. I am new here...  
+@back playground wait:false
+@char taj.smirk wait:false
+TAJ: If you are new here that means we better teach him a lesson on how to live in Wood Bridge.  
+TAJ: What do you say Raj?
+@char raj.smirk wait:false
+RAJ: OHH YES! Let’s kick him like a football. Why don’t you take the freekick Rudy?
+@hideAll time:1
+@char rudy.smirk_int
+RUDY: OH! It would be my honor!  
+@wait 2
+@sfx rude loop:false
+@hideAll
+@sfx norun
+@sfx run volume:1 loop:false
+Aryan, agitated, tackles RUDY, leading to a chase through the playground to the football ground.
+Taj, Rudy and Raj chase Aryan to a point where he cannot escape. 
+@wait 1
+@bgm fall loop:false
+Aryan falls down
+@back fg
+RUDY: No place left to run. Now you will never be able to run!!  
+@save
+@wait 2
+@sfx kick1
+@back devk
+@sfx kick2
+@sfx kick3
+@wait 3
+DEV: Take this pain as a lesson and never hurt anyone.
+@back devak wait:1
+*Dev came for an interview to become karate instructor for Wood Bridge Elementary School.* 
+Dev:  Come on champ! Get up. Have you ever thought about learning how to fight so you could defend yourself and your loved ones? 
+@back amrita
+AMRITA: Dev come on! We are getting late for the sports event. I want the best seats to watch the improvement of our students. They have had one heck of a year.  
+@back devak wait:1
+DEV: I am coming heart. Give me 2 minutes please 
+DEV: What's your name buddy?
+@char aryan.Aryanpol
+ARYAN: My name is Aryan and I study in 5th Grade. I am new here
+@hideChars
+DEV: Goons and troubles will always keep on coming. You can't run forever. Do you want to learn to fight? 
+@wait 3
+@hideAll
+@char aryan.Aryanpol
+@choice "I got this, I am new here. I will focus on my studies." goto:.Done
+@choice "I am ALL IN! Please become my teacher" goto:.LetsGo
+@stop
+
+# Done
+@hideChars
+@back devak wait:1
+DEV: Okay Buddy Wish you the very best in Wood Bridge Elementary. 
+@stop
+
+# LetsGo
+@hideChars
+@back devak
+DEV: I will see you tomorrow after school in the gym. Bye Aryan 
+@bgm fin loop:false fade:15 time:15
+@back OIG
+DEV: Today, we delve not only into the physical aspects of martial arts but also into its profound philosophy.
+DEV: Martial arts is a way of life, extending beyond the training hall. In daily challenges, apply the principles of discipline, respect, and humility.
+DEV: Gratitude is a balm for the soul. In moments of turmoil, take a pause and reflect on the blessings in your life.
+DEV: WE will run for 3km and then sit for 15 minutes. Practice High Kick 30 times. 
+DEV: For each and everyday and I will increase the speed gradually.
+@back devk
+@sfx kick1
+DEV: Hiyaah!
+@hideAll
+@char genk
+@sfx kick1
+ARYAN: Hiiiiyyaaaaah!!! 
+@sfx kick1
+ARYAN: Hiiyyaah!!! 
+@sfx kick1
+@hideAll
+A month have passed since the first time Aryan met Dev, he have grown into a more calm and serene being.  
+@back medtr
+DEV: You are now a wiser and a stronger man. Don't forget that we learnt to fight to protect others. 
+Aryan: Thank you Sir. 
+@hideAll
+@wait 1
+NEXT DAY IN SCHOOL
+
+
+@stop
